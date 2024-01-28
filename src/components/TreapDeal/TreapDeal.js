@@ -1,5 +1,6 @@
+   "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
-import "swiper/swiper.min.css";
+import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import tripslider from '../../assets/trip/car1.png'
