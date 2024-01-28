@@ -1,4 +1,5 @@
 import BrandLogo from "@/components/BrandLogo/BrandLogo";
+import TreapDeal from "@/components/TreapDeal/TreapDeal";
 
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
      
      <BrandLogo></BrandLogo>
+     <TreapDeal></TreapDeal>
     </div> 
   );
 };
