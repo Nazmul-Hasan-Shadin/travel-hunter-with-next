@@ -1,4 +1,5 @@
 import BrandLogo from "@/components/BrandLogo/BrandLogo";
+import Categories from "@/components/Categories/Categories";
 import TreapDeal from "@/components/TreapDeal/TreapDeal";
 
 
@@ -8,6 +9,7 @@ const Home = () => {
      
      <BrandLogo></BrandLogo>
      <TreapDeal></TreapDeal>
+     <Categories></Categories>
     </div> 
   );
 };

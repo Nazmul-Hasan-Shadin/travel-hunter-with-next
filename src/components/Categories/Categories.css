@@ -1,0 +1,15 @@
+.partial-background-categories{
+    position: relative;
+}
+.partial-background-categories::before{
+    content: 'hfdhdfj';
+    position: absolute;
+ 
+    height: 469px;
+    top: -40px;
+    left: 10px;
+    width: 19%;
+
+    background: #008080;
+    filter: blur(105px);
+}
