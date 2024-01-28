@@ -1,9 +1,11 @@
+import BrandLogo from "@/components/BrandLogo/BrandLogo";
 
 
 const Home = () => {
   return (
     <div>
-      <h1>this is home</h1>
+     
+     <BrandLogo></BrandLogo>
     </div> 
   );
 };
