@@ -5,9 +5,10 @@ import logo1 from '@/assets/client/bata.png'
 import logo2 from '@/assets/client/logo4.png'
 import logo3 from '@/assets/client/logo3.png'
 import logo4 from '@/assets/client/biman.png'
+import styles from './Client.module.css'
 const Client = () => {
     return (
-        <div  style={{backgroundImage:'url("https://i.ibb.co/4RG09rk/bg2.png")',width:'100%',height:'354px'}} className='bg-cover   '>
+        <div  className={styles.backgroundImg} >
          <div className=''>
             <PrimaryHeader heading={'Our'} styleText={'Client'}></PrimaryHeader>
          </div>

@@ -1,0 +1,9 @@
+.backgroundImg{
+    background: linear-gradient(to right ,rgba(0, 128, 128, 0.20) 0%, rgba(0, 128, 128, 0.20) 100% ),url('https://i.ibb.co/4RG09rk/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+  
+    
+}
+
