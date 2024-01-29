@@ -9,7 +9,7 @@ const CategoryCard = ({category}) => {
          <div className="card card-compact  bg-base-100 shadow-xl">
   <figure>
    
-    <Image src={image} width={'100%'} height={'215.17px'} alt="card image of categories"/>
+    <Image src={image} width={300} height={215.17} alt="card image of categories"/>
     </figure>
   <div className="card-body">
     <h2 style={{color: 'rgba(0, 0, 0, 0.50)'}} className="card-title">{car_name}</h2>

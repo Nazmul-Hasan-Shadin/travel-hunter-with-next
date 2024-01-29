@@ -69,7 +69,7 @@
             "price": 90
              ,"category":"car"    },
           {
-            "image": "car6.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 7,
             "bags_number": 4,
             "star": 4.3,
@@ -82,7 +82,7 @@
             "price": 100       ,"category":"car"
           },
           {
-            "image": "car7.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 2,
             "bags_number": 1,
             "star": 4.9,
@@ -95,7 +95,7 @@
             "price": 120       ,"category":"car"
           },
           {
-            "image": "car8.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 3,
             "bags_number": 2,
             "star": 4.1,
@@ -108,7 +108,7 @@
             "price": 80
              ,"category":"car"    },
           {
-            "image": "car9.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 4,
             "bags_number": 2,
             "star": 4.4,
@@ -121,7 +121,7 @@
             "price": 85
              ,"category":"car"    },
           {
-            "image": "car10.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 6,
             "bags_number": 3,
             "star": 4.6,
@@ -134,7 +134,7 @@
             "price": 110       ,"category":"car"
           },
           {
-            "image": "car11.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 5,
             "bags_number": 2,
             "star": 4.0,
@@ -147,7 +147,7 @@
             "price": 75
              ,"category":"car"    },
           {
-            "image": "car12.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 4,
             "bags_number": 2,
             "star": 4.2,
@@ -160,7 +160,7 @@
             "price": 65
              ,"category":"car"    },
           {
-            "image": "car13.jpg",
+            "image": "https://i.ibb.co/LdKZ6wN/car2.png",
             "passenger_number": 2,
             "bags_number": 1,
             "star": 3.7,
