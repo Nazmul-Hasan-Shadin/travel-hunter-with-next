@@ -1,5 +1,6 @@
 import BrandLogo from "@/components/BrandLogo/BrandLogo";
 import Categories from "@/components/Categories/Categories";
+import RootHome from "@/components/Pages/Home/Home";
 import TreapDeal from "@/components/TreapDeal/TreapDeal";
 
 
@@ -7,9 +8,7 @@ const Home = () => {
   return (
     <div>
      
-     <BrandLogo></BrandLogo>
-     <TreapDeal></TreapDeal>
-     <Categories></Categories>
+    <RootHome></RootHome>
     </div> 
   );
 };

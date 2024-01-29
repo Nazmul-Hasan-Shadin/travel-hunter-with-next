@@ -6,12 +6,19 @@ import CategoryTab from "../CategoryTab/CategoryTab";
 import CategoriesContent from "./CategoriesContent/CategoriesContent";
 
 const Categories = async () => {
-  const data = await axios.get("http://localhost:3004/carData", {
-  
+  const data = await axios.get("https://travel-hunter-server.vercel.app/categories-data", {
+    cache:'no-store'
   });
+  console.log(data.data.message);
 
-  const car = await data?.data?.filter((car) => car.category === "car");
-  console.log(car);
+  const selectCar =  data?.data?.message.find((car) => car.carData);
+  const car= selectCar?.carData.filter(car=>car.category==='car')
+  
+  const selectHotel =  data?.data?.message.find((hotel) => hotel.hotelData);
+  const hotel= selectHotel?.hotelData.filter(hotel=>hotel.category==='hotel')
+  
+ console.log(hotel);
+
 
   return (
     <div className="bg-[#101010]  partial-background-categories ">
@@ -24,7 +31,7 @@ const Categories = async () => {
       ></PrimaryHeader>
 
       {/* ==============categories============================= */}
-      <CategoriesContent categoryContent={car}></CategoriesContent>
+      <CategoriesContent categoryContent={car} hotel={hotel} ></CategoriesContent>
     </div>
   );
 };

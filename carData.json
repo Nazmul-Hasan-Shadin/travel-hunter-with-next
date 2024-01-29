@@ -209,7 +209,8 @@
             "mobile_charger": true,
             "bluetooth": false,
             "drink_include": true,
-            "price": 100       ,"category":"car"
+            "price": 100       ,
+            "category":"car"
           },
           {
             "image": "car17.jpg",
@@ -249,7 +250,8 @@
             "mobile_charger": true,
             "bluetooth": true,
             "drink_include": false,
-            "price": 110       ,"category":"car"
+            "price": 110       ,
+            "category":"car"
           },
           {
             "image": "car20.jpg",
@@ -265,161 +267,165 @@
             "price": 180       ,
             "category":"car"
           }
-          ,
-          {
-            "hotelName": "Oceanfront Paradise",
-            "price": 150,
-            "location": "Coastal Haven",
-            "star": 4.5,
-            "details": "Escape to a serene oceanfront retreat. Immerse yourself in luxury with breathtaking views and unparalleled comfort.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Cityscape Suites",
-            "price": 120,
-            "location": "Metropolitan Hub",
-            "star": 4.2,
-            "details": "Experience the buzz of the city in our stylish suites. Perfect for urban explorers and business travelers.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Mountain Retreat Lodge",
-            "price": 180,
-            "location": "Scenic Mountains",
-            "star": 4.7,
-            "details": "Embrace nature's beauty at our mountain lodge. A tranquil escape for those seeking peace and adventure.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Luxury Oasis Resort",
-            "price": 250,
-            "location": "Tropical Paradise",
-            "star": 5.0,
-            "details": "Indulge in unparalleled luxury surrounded by tropical beauty. Our resort offers a heavenly escape.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Riverside Boutique Inn",
-            "price": 100,
-            "location": "Quaint Riverside",
-            "star": 3.8,
-            "details": "Charm meets comfort in our boutique inn by the riverside. A perfect blend of history and modern amenities.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Ski Lodge Haven",
-            "price": 200,
-            "location": "Winter Wonderland",
-            "star": 4.4,
-            "details": "Cozy up in our ski lodge nestled in a winter wonderland. An idyllic retreat for snow enthusiasts.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Historic Mansion Hotel",
-            "price": 300,
-            "location": "Cultural District",
-            "star": 4.9,
-            "details": "Step into a bygone era at our historic mansion hotel. Immerse yourself in timeless elegance and luxury.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Garden View Resort",
-            "price": 180,
-            "location": "Botanical Gardens",
-            "star": 4.6,
-            "details": "Surround yourself with lush greenery at our garden view resort. A haven for nature lovers and relaxation seekers.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Desert Oasis Inn",
-            "price": 120,
-            "location": "Sunny Desert",
-            "star": 4.2,
-            "details": "Experience the beauty of the desert at our oasis inn. Modern comforts meet the tranquility of the arid landscape.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Historic Harbor Hotel",
-            "price": 160,
-            "location": "Maritime District",
-            "star": 4.3,
-            "details": "Immerse yourself in maritime history at our historic harbor hotel. A waterfront retreat with a touch of nostalgia.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Urban Skyline Suites",
-            "price": 220,
-            "location": "Downtown Skyline",
-            "star": 4.8,
-            "details": "Enjoy panoramic views of the city from our urban skyline suites. Luxury living in the heart of the metropolis.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Forest Retreat Lodge",
-            "price": 190,
-            "location": "Enchanted Forest",
-            "star": 4.5,
-            "details": "Find solace in the midst of nature at our forest retreat lodge. Unplug and rejuvenate in a magical woodland setting.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Seaside Boutique Hotel",
-            "price": 140,
-            "location": "Charming Seaside",
-            "star": 4.0,
-            "details": "Experience seaside charm at our boutique hotel. Relax to the sound of waves and enjoy coastal elegance.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Alpine Chalet Resort",
-            "price": 260,
-            "location": "Alpine Wonderland",
-            "star": 4.7,
-            "details": "Escape to our alpine chalet resort. Experience luxury in a snowy paradise with stunning mountain views.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Serenity Spa Retreat",
-            "price": 180,
-            "location": "Tranquil Hills",
-            "star": 4.4,
-            "details": "Indulge in tranquility at our spa retreat. Revitalize your mind and body in the lap of serene hills.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Epicurean Vineyard Inn",
-            "price": 200,
-            "location": "Vineyard Countryside",
-            "star": 4.6,
-            "details": "Unwind in the heart of vineyard country. Savor the good life at our epicurean inn surrounded by rolling hills.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Majestic Castle Hotel",
-            "price": 350,
-            "location": "Regal Countryside",
-            "star": 5.0,
-            "details": "Live like royalty in our majestic castle hotel. A grand escape in a regal countryside setting.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Quaint Countryside Lodge",
-            "price": 170,
-            "location": "Idyllic Countryside",
-            "star": 4.3,
-            "details": "Discover rustic charm at our countryside lodge. A peaceful retreat surrounded by picturesque landscapes.",
-            "category": "hotel"
-          },
-          {
-            "hotelName": "Tropical Paradise Resort",
-            "price": 230,
-            "location": "Exotic Islands",
-            "star": 4.9,
-            "details": "Bask in luxury on exotic islands. Our resort offers a tropical paradise for relaxation and adventure.",
-            "category": "hotel"
-          }
+          
         
           
-        ]
+        ],
+
+     "hotelData": [
+      {
+        "hotelName": "Oceanfront Paradise",
+        "price": 150,
+        "location": "Coastal Haven",
+        "star": 4.5,
+        "details": "Escape to a serene oceanfront retreat. Immerse yourself in luxury with breathtaking views and unparalleled comfort.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Cityscape Suites",
+        "price": 120,
+        "location": "Metropolitan Hub",
+        "star": 4.2,
+        "details": "Experience the buzz of the city in our stylish suites. Perfect for urban explorers and business travelers.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Mountain Retreat Lodge",
+        "price": 180,
+        "location": "Scenic Mountains",
+        "star": 4.7,
+        "details": "Embrace nature's beauty at our mountain lodge. A tranquil escape for those seeking peace and adventure.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Luxury Oasis Resort",
+        "price": 250,
+        "location": "Tropical Paradise",
+        "star": 5.0,
+        "details": "Indulge in unparalleled luxury surrounded by tropical beauty. Our resort offers a heavenly escape.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Riverside Boutique Inn",
+        "price": 100,
+        "location": "Quaint Riverside",
+        "star": 3.8,
+        "details": "Charm meets comfort in our boutique inn by the riverside. A perfect blend of history and modern amenities.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Ski Lodge Haven",
+        "price": 200,
+        "location": "Winter Wonderland",
+        "star": 4.4,
+        "details": "Cozy up in our ski lodge nestled in a winter wonderland. An idyllic retreat for snow enthusiasts.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Historic Mansion Hotel",
+        "price": 300,
+        "location": "Cultural District",
+        "star": 4.9,
+        "details": "Step into a bygone era at our historic mansion hotel. Immerse yourself in timeless elegance and luxury.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Garden View Resort",
+        "price": 180,
+        "location": "Botanical Gardens",
+        "star": 4.6,
+        "details": "Surround yourself with lush greenery at our garden view resort. A haven for nature lovers and relaxation seekers.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Desert Oasis Inn",
+        "price": 120,
+        "location": "Sunny Desert",
+        "star": 4.2,
+        "details": "Experience the beauty of the desert at our oasis inn. Modern comforts meet the tranquility of the arid landscape.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Historic Harbor Hotel",
+        "price": 160,
+        "location": "Maritime District",
+        "star": 4.3,
+        "details": "Immerse yourself in maritime history at our historic harbor hotel. A waterfront retreat with a touch of nostalgia.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Urban Skyline Suites",
+        "price": 220,
+        "location": "Downtown Skyline",
+        "star": 4.8,
+        "details": "Enjoy panoramic views of the city from our urban skyline suites. Luxury living in the heart of the metropolis.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Forest Retreat Lodge",
+        "price": 190,
+        "location": "Enchanted Forest",
+        "star": 4.5,
+        "details": "Find solace in the midst of nature at our forest retreat lodge. Unplug and rejuvenate in a magical woodland setting.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Seaside Boutique Hotel",
+        "price": 140,
+        "location": "Charming Seaside",
+        "star": 4.0,
+        "details": "Experience seaside charm at our boutique hotel. Relax to the sound of waves and enjoy coastal elegance.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Alpine Chalet Resort",
+        "price": 260,
+        "location": "Alpine Wonderland",
+        "star": 4.7,
+        "details": "Escape to our alpine chalet resort. Experience luxury in a snowy paradise with stunning mountain views.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Serenity Spa Retreat",
+        "price": 180,
+        "location": "Tranquil Hills",
+        "star": 4.4,
+        "details": "Indulge in tranquility at our spa retreat. Revitalize your mind and body in the lap of serene hills.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Epicurean Vineyard Inn",
+        "price": 200,
+        "location": "Vineyard Countryside",
+        "star": 4.6,
+        "details": "Unwind in the heart of vineyard country. Savor the good life at our epicurean inn surrounded by rolling hills.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Majestic Castle Hotel",
+        "price": 350,
+        "location": "Regal Countryside",
+        "star": 5.0,
+        "details": "Live like royalty in our majestic castle hotel. A grand escape in a regal countryside setting.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Quaint Countryside Lodge",
+        "price": 170,
+        "location": "Idyllic Countryside",
+        "star": 4.3,
+        "details": "Discover rustic charm at our countryside lodge. A peaceful retreat surrounded by picturesque landscapes.",
+        "category": "hotel"
+      },
+      {
+        "hotelName": "Tropical Paradise Resort",
+        "price": 230,
+        "location": "Exotic Islands",
+        "star": 4.9,
+        "details": "Bask in luxury on exotic islands. Our resort offers a tropical paradise for relaxation and adventure.",
+        "category": "hotel"
+      }
+    
+     ]
         
 }

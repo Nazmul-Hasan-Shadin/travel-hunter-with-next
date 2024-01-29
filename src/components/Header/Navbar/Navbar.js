@@ -25,8 +25,8 @@ const Navbar = () => {
 
            <svg xmlns="http://www.w3.org/2000/svg" width="1682" height="98" viewBox="0 0 1682 98" fill="none">
   <g opacity="0.97" filter="url(#filter0_bdddddddd_100_899)">
-    <path d="M11 27C11 15.9543 19.9543 7 31 7H1651C1662.05 7 1671 15.9543 1671 27V63C1671 74.0457 1662.05 83 1651 83H31C19.9543 83 11 74.0457 11 63V27Z" fill="url(#paint0_linear_100_899)" fill-opacity="0.7" shape-rendering="crispEdges"/>
-    <path d="M11 27C11 15.9543 19.9543 7 31 7H1651C1662.05 7 1671 15.9543 1671 27V63C1671 74.0457 1662.05 83 1651 83H31C19.9543 83 11 74.0457 11 63V27Z" fill="black" fill-opacity="0.2" shape-rendering="crispEdges"/>
+    <path d="M11 27C11 15.9543 19.9543 7 31 7H1651C1662.05 7 1671 15.9543 1671 27V63C1671 74.0457 1662.05 83 1651 83H31C19.9543 83 11 74.0457 11 63V27Z" fill="url(#paint0_linear_100_899)" fillOpacity="0.7" shape-rendering="crispEdges"/>
+    <path d="M11 27C11 15.9543 19.9543 7 31 7H1651C1662.05 7 1671 15.9543 1671 27V63C1671 74.0457 1662.05 83 1651 83H31C19.9543 83 11 74.0457 11 63V27Z" fill="black" fillOpacity="0.2" shape-rendering="crispEdges"/>
     <path d="M12 27C12 16.5066 20.5066 8 31 8H1651C1661.49 8 1670 16.5066 1670 27V63C1670 73.4934 1661.49 82 1651 82H31C20.5066 82 12 73.4934 12 63V27Z" stroke="white" stroke-width="2" shape-rendering="crispEdges"/>
   </g>
   <defs>
