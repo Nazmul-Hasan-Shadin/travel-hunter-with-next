@@ -1,3 +1,4 @@
+import About from '@/components/About/About';
 import BrandLogo from '@/components/BrandLogo/BrandLogo';
 import Categories from '@/components/Categories/Categories';
 import Client from '@/components/Client/Client';
@@ -13,6 +14,7 @@ const RootHome = () => {
      <Categories></Categories>
       <Service></Service>
       <Client></Client>
+      <About></About>
       
         </div>
     );

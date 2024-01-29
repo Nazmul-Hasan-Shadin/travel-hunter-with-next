@@ -23,7 +23,7 @@ const Service = () => {
 
       {/* services slider  */}
     
-     <div className='px-[8%]'>
+     <div className='p-[8%]'>
      <Swiper
         slidesPerView={3}
         spaceBetween={30}

@@ -7,8 +7,8 @@ import logo3 from '@/assets/client/logo3.png'
 import logo4 from '@/assets/client/biman.png'
 const Client = () => {
     return (
-        <div style={{backgroundImage:'url("https://i.ibb.co/hLH0k84/bg.png")',width:'100%',height:'354px'}} className='bg-center mt-12 '>
-         <div className='mt-9'>
+        <div  style={{backgroundImage:'url("https://i.ibb.co/4RG09rk/bg2.png")',width:'100%',height:'354px'}} className='bg-cover   '>
+         <div className=''>
             <PrimaryHeader heading={'Our'} styleText={'Client'}></PrimaryHeader>
          </div>
 
