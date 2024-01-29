@@ -1,4 +1,4 @@
-
+"use client"
 import { IoIosSearch } from "react-icons/io";
 import { FaEarthAsia } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";

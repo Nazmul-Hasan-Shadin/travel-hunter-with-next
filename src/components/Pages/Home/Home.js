@@ -3,6 +3,7 @@ import BrandLogo from '@/components/BrandLogo/BrandLogo';
 import Categories from '@/components/Categories/Categories';
 import Client from '@/components/Client/Client';
 import Service from '@/components/Service/Service';
+import Experience from '@/components/TravelExperience/Experience';
 import TreapDeal from '@/components/TreapDeal/TreapDeal';
 import React from 'react';
 
@@ -15,6 +16,7 @@ const RootHome = () => {
       <Service></Service>
       <Client></Client>
       <About></About>
+     <Experience></Experience>
       
         </div>
     );
