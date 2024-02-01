@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { FaStar } from 'react-icons/fa6';
-import image from '@/assets/review/photo1.png'
-import Image from 'next/image';
+
+
 const Review = () => {
     return (
         <div>
         <div > 
       <figure>
-        <Image src={image} alt="review image" width={300} height={300} />
+    
 
       </figure>
         <p>

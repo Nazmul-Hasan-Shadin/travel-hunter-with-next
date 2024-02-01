@@ -6,18 +6,18 @@ import CategoryTab from "../CategoryTab/CategoryTab";
 import CategoriesContent from "./CategoriesContent/CategoriesContent";
 
 const Categories = async () => {
-  const data = await axios.get("https://travel-hunter-server.vercel.app/categories-data", {
+  const data = await axios.get("https://travel-hunter-gray.vercel.app/api/v1/services", {
     cache:'no-store'
   });
-  console.log(data.data.message);
 
-  const selectCar =  data?.data?.message.find((car) => car.carData);
+
+  const selectCar =  data?.data?.find((car) => car.carData);
   const car= selectCar?.carData.filter(car=>car.category==='car')
   
-  const selectHotel =  data?.data?.message.find((hotel) => hotel.hotelData);
+  const selectHotel =  data?.data?.find((hotel) => hotel.hotelData);
   const hotel= selectHotel?.hotelData.filter(hotel=>hotel.category==='hotel')
   
- console.log(hotel);
+ 
 
 
   return (

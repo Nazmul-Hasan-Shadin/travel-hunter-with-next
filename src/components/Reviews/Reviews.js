@@ -1,23 +1,20 @@
-import profile1 from '@/assets/review/photo1.png'
-import profile2 from '@/assets/review/avatar.png'
-import profile3 from '@/assets/review/avatar2.png'
 
+import axios from 'axios';
+import React from 'react';
 
-const Reviews = () => {
-    
-    return (
-        <div>
-             
-          {
-            slides.map(slide=> <>
-             <div>
-               {slide}
-             </div>
-            </>)
-          }
+const Reviews = async() => {
+   
+  fetch('/api/v1/reviews')
+  .then(res=>res.json)
+  .then(result=> console.log(result))
 
-        </div>
-    );
+console.log(review);
+
+  return (
+    <div>
+      <h3>hi</h3>
+    </div>
+  );
 };
 
 export default Reviews;

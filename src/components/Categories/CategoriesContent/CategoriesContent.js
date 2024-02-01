@@ -5,7 +5,6 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 
 const CategoriesContent = ({categoryContent,hotel}) => {
-    console.log(categoryContent);
     return (
         <div>
             
