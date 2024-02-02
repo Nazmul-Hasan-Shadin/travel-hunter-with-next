@@ -9,12 +9,14 @@ const Header = () => {
         <div className=''>
             <div className="bg-no-repeat h-[40vh] bg-cover bg-center lg:h-[97vh] w-full  " style={{backgroundImage:"url('/carBanner.png')"}}>
            <Navbar></Navbar>
-        <HeaderText></HeaderText>
-
         
-        <AdvancedSearch></AdvancedSearch>
+           <HeaderText className="hidden lg:block"></HeaderText>
+           <AdvancedSearch className="hidden lg:block" ></AdvancedSearch>
         </div>
-    
+     
+        <HeaderText className="block lg:hidden"></HeaderText>
+        <AdvancedSearch className="block md:hidden"></AdvancedSearch>
+      
         </div>
     );
 };

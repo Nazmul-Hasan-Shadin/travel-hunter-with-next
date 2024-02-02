@@ -12,14 +12,14 @@ const RootHome = () => {
     return (
         <div>
      <BrandLogo></BrandLogo>
-     <TreapDeal></TreapDeal>
-     <Categories></Categories>
+     {/* <TreapDeal></TreapDeal> */}
+     {/* <Categories></Categories>
       <Service></Service>
       <Client></Client>
       <About></About>
      <Experience></Experience>
      <NewsLetter></NewsLetter>
-     
+      */}
      
       
         </div>

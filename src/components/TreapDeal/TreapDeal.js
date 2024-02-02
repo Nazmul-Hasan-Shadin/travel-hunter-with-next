@@ -44,7 +44,7 @@ const TreapDeal = () => {
         </SwiperSlide>
         <SwiperSlide>
     
-     <Image src={tripslider3} width={'100%'} height={'100%'} alt='trip images'/>
+     <Image src={tripslider3}  alt='trip images'/>
  
         </SwiperSlide>
         <SwiperSlide>

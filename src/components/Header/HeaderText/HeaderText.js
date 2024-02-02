@@ -1,9 +1,10 @@
-const HeaderText = ({ onclick }) => {
+ 'useClient'
+const HeaderText = ({ onclick,className }) => {
   return (
-    <div className="w-full relative lg:w-[64%]   text-white space-y-3 pt-14 mt-[37%]  lg:pl-[184px]  bg-[#101010] lg:bg-opacity-0 lg:mt-0 h-[400px] ">
+    <div className={`w-full relative lg:w-[64%]   text-white space-y-3 pt-14 mt-[37% lg:pl-[184px]  bg-[#101010] lg:bg-opacity-0 lg:mt-0 h-[400px]  ${className} `}>
       <h1 className=" text-3xl lg:text-6xl p-4 lg:p-0">
         {" "}
-        Start your <span className="text-[#00C9C9]"> unforgettable </span>
+        Start <br /> your <span className="text-[#00C9C9]"> unforgettable </span>
         <br />
         journey with us.{" "}
       </h1>
@@ -18,7 +19,7 @@ const HeaderText = ({ onclick }) => {
           className="input  input-bordered input-md w-full max-w-xs text-black  opacity-[0.1] bg-[#FFF]"
         />
 
-        <div className="absolute  lg:right-12 top-0 lg:w-[300px] ">
+        <div className=" relative lg:absolute  lg:right-12 top-0 lg:w-[300px] ">
           <button
             onClick={onclick}
             className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline opacity: 0.1 lg:opacity-1 "

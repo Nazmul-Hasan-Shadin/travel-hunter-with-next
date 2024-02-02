@@ -4,9 +4,9 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "./AdvanceSearch.css";
 
 import { MdOutlineLocationOn } from "react-icons/md";
-const AdvancedSearch = ({onclick}) => {
+const AdvancedSearch = ({onclick,className}) => {
   return (
-    <div className=" relative  mt-16 lg:mx-auto text-white  lg:p-6 background-search  lg:w-[64%]  lg:h-[278px]  ">
+    <div className={` relative  mt-16 lg:mx-auto text-white  lg:p-6 background-search  lg:w-[64%]  lg:h-[278px] ${className} `}>
       <div className="grid  grid-cols-1 lg:grid-cols-3  sm:bg-for-form  relative">
        <div> <span className="w-fit ">CHOOSE CATEGORY</span></div>
      <div className="">
@@ -15,10 +15,10 @@ const AdvancedSearch = ({onclick}) => {
           <div className="  -translate-y-24 lg:translate-y-0 ">
           <TabList
               className={
-                "flex w-full justify-center gap-6 lg:gap-2  bg-[#fff] lg:w-[359px]   mb-4 text-white font-medium p-[1px]  lg:-translate-x-16  "
+                "flex w-full justify-center gap-4 lg:gap-2  mt-3 bg-[#fff] lg:w-[359px]   mb-4 text-white font-medium p-[1px]  lg:-translate-x-16  "
               }
             >
-              <Tab className={"bg-[#008080]  px-4 lg:px-[23px] py-2 rounded-[5px]"}>
+              <Tab className={"bg-[#008080]  px-2 lg:px-[23px] py-2 rounded-[5px]"}>
                 {" "}
                car
               </Tab>
@@ -37,7 +37,7 @@ const AdvancedSearch = ({onclick}) => {
 
             <div className="" >
               <TabPanel className={"flex justify-center"}>
-                <div className="w-full lg:absolute  left-0 p-3">
+                <div className="w-full relative lg:absolute  left-0 p-3">
 
                     {/* div one */}
                   <div className=" grid grid-cols-2 gap-4 space-y-2 lg:grid-cols-3 ">
