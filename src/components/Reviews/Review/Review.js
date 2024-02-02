@@ -1,25 +1,31 @@
 
+import Image from 'next/image';
 import React from 'react';
 import { FaStar } from 'react-icons/fa6';
+import image from '@/assets/review/Avatar.png'
 
 
-const Review = () => {
+const Review = ({review}) => {
+  const {imaged ,description,star,name,title}= review;
+  console.log(image,'image');
     return (
-        <div>
-        <div > 
-      <figure>
-    
+        <div className='' >
+        <div className='text-[#767E86] space-y-2 bg-white p-5 rounded-[8px]' > 
+      <figure className='-translate-y-20'>
+     
+     <Image  src={image} width={100} height={100} alt="client image" />
 
       </figure>
         <p>
-        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.
+    
+    {description}
             </p>   
 
-     <span className='flex gap-10'>
-         <FaStar/> 
-         <FaStar/> 
-         <FaStar/> 
-         <FaStar/> 
+     <span className='flex gap-3'>
+         <FaStar className='#FFC107'/> 
+         <FaStar className='#FFC107'/> 
+         <FaStar className='#FFC107'/> 
+         <FaStar className='#FFC107'/> 
      
      </span>   
      <h2>John DOe</h2>   
