@@ -8,7 +8,11 @@ const nextConfig = {
         
         }
         ]
-    }
+    },
+
+    publicRuntimeConfig: {
+        apiUrl: process.env.URL,
+      },
 };
 
 export default nextConfig;

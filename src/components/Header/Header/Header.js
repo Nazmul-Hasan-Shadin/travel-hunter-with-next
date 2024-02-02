@@ -7,8 +7,8 @@ import AdvancedSearch from '../AdvancedSearch/AdvanchedSearch';
 const Header = () => {
     return (
         <div className=''>
-            <div className=" bg-center bg-cover  bg-no-repeat w-[412px] h-[216px] lg:w-full lg:h-full" style={{backgroundImage:"url('/carBanner.png')",height:'100%',width:'100%'}}>
-        <Navbar></Navbar>
+            <div className="bg-no-repeat h-[40vh] bg-cover bg-center lg:h-[97vh] w-full  " style={{backgroundImage:"url('/carBanner.png')"}}>
+           <Navbar></Navbar>
         <HeaderText></HeaderText>
 
         

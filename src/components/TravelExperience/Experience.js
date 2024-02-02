@@ -1,3 +1,4 @@
+
 import React from 'react';
 import PrimaryHeader from '../shared/PrimaryHeader/PrimaryHeader';
 import Reviews from '../Reviews/Reviews';
@@ -6,7 +7,7 @@ import Review from '../Reviews/Review/Review';
 
 const Experience =async() => {
  
-   const reviewsData= await fetch('http://localhost:3000/api/v1/reviews')
+   const reviewsData= await fetch(process.env.URL + '/api/v1/reviews')
    const reviews=  await reviewsData.json()
   
      console.log(reviews);

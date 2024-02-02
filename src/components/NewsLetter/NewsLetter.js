@@ -1,6 +1,5 @@
-"use client"
-import React from 'react';
-import newsLetterBg from '@/assets/Banner/footerbanner.png'
+
+
 const NewsLetter = () => {
     return (
         <div className='px-12 bg-no-repeat bg-center w-full flex items-center ' style={{backgroundImage:`url(https://i.ibb.co/FhgJdJg/footerbanner.png})`, height:'300px'}}>
@@ -10,7 +9,7 @@ const NewsLetter = () => {
              <p>Subscribe and be the first to receive our exclusive offers</p>
 
            </div>
-             <div className="w-[90%]  ">
+             <div className="w-[90%]   ">
         <input
           type="text"
           border
@@ -18,11 +17,17 @@ const NewsLetter = () => {
           className="input  input-bordered input-md w-full max-w-xs text-black   bg-[#FFF]"
         />
        <button
-            onClick={'onclick'}
+            
             className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10   text-white btn-outline opacity: 0.1 lg:opacity-1 -translate-x-8 "
           >
             Subscribe
           </button>
+          <br />
+
+          <input type="checkbox" checked="checked" className="checkbox checkbox-secondary mt-3" /> 
+           <span>I would like to get  offers and news from American Airways. I have read and
+understood the privacy notice.</span>
+
  
       </div>
              </div>

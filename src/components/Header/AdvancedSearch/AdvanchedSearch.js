@@ -15,20 +15,20 @@ const AdvancedSearch = ({onclick}) => {
           <div className="  -translate-y-24 lg:translate-y-0 ">
           <TabList
               className={
-                "flex gap-2  bg-[#fff] w-[359px]   mb-4 text-white font-medium p-[1px]  lg:-translate-x-16  "
+                "flex w-full justify-center gap-6 lg:gap-2  bg-[#fff] lg:w-[359px]   mb-4 text-white font-medium p-[1px]  lg:-translate-x-16  "
               }
             >
-              <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
+              <Tab className={"bg-[#008080]  px-4 lg:px-[23px] py-2 rounded-[5px]"}>
                 {" "}
                car
               </Tab>
-              <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
+              <Tab className={"bg-[#008080] px-4 lg:px-[23px] py-2 rounded-[5px]"}>
                 Flight
               </Tab>
-              <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
+              <Tab className={"bg-[#008080] px-4 lg:px-[23px] py-2 rounded-[5px]"}>
                 Hotel
               </Tab>
-              <Tab className={"bg-[#008080] px-[23px] py-2 rounded-[5px]"}>
+              <Tab className={"bg-[#008080] px-4 lg:px-[23px] py-2 rounded-[5px]"}>
                 Boat
               </Tab>
             </TabList>
