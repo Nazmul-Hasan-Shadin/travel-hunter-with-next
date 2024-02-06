@@ -9,8 +9,10 @@ const Login = () => {
         <div
           className={`hero    min-h-screen  bg-[#000000]  relative ${circleStyle.circleBg} `}
         >
-          <form className="card-body p-0 md:p-4 z-20 space-y-3">
-            <h2 className=" text-xl lg:text-2xl text-white">Login To Your Account</h2>
+          <form className="card-body  z-20 space-y-3">
+            <h2 className=" text-xl lg:text-2xl text-white">
+              Login To Your Account
+            </h2>
             <div className="form-control ">
               <label className="label ">
                 <span className="label-text text-white ">Enter Your Email</span>
@@ -49,7 +51,7 @@ const Login = () => {
           </form>
         </div>
       </div>
-      <div className=" h-60 flex justify-center lg:h-screen lg:flex-1 bg-[#008080] relative">
+      <div className=" h-60 lg:h-screen flex justify-center  lg:flex-1 bg-[#008080] relative">
         <Image
           className=" w-11/12  absolute top-1/4 z-10  lg:-left-28 lg:w-[600px] lg:h-[400px] "
           src={loginImage}
