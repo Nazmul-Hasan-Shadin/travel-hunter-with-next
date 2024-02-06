@@ -1,15 +1,29 @@
+"use client";
+import { useForm } from "react-hook-form";
 import Image from "next/image";
 import loginImage from "@/assets/login/log.png";
 import circleStyle from "./login.module.css";
 
 const Login = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const submitForm = (data) => {
+    console.log(data);
+  };
   return (
     <div className="flex flex-col-reverse lg:flex-row ">
       <div className="lg:flex-1">
         <div
           className={`hero    min-h-screen  bg-[#000000]  relative ${circleStyle.circleBg} `}
         >
-          <form className="card-body  z-20 space-y-3">
+          <form
+            onSubmit={handleSubmit(submitForm)}
+            className="card-body  z-20 space-y-3"
+          >
             <h2 className=" text-xl lg:text-2xl text-white">
               Login To Your Account
             </h2>
@@ -18,22 +32,30 @@ const Login = () => {
                 <span className="label-text text-white ">Enter Your Email</span>
               </label>
               <input
+                {...register("email", { required: "Email field is required" })}
                 type="email"
                 placeholder="email"
                 className="input  input-bordered border-b-4  border-b-[#38bdf8]  text-black "
-                required
               />
+              <span className="text-red-400">
+                {errors?.email?.message && `${errors?.email?.message}`}
+              </span>
             </div>
             <div className="form-control">
               <label className="label">
                 <span className="label-text text-white">Password</span>
               </label>
               <input
+                {...register("password", {
+                  required: "Passward field is required",
+                })}
                 type="password"
                 placeholder="password"
                 className="input input-bordered border-b-4  border-b-[#38bdf8] text-black "
-                required
               />
+              <span className="text-red-400">
+                {errors?.email?.message && `${errors?.email?.message}`}
+              </span>
               <label className="label">
                 <a
                   href="#"

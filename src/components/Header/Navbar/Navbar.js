@@ -43,7 +43,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="relative  mx-auto w-[86%]">
+    <div className="relative z-10 mx-auto w-[86%]">
       <div className="navbar  background-nav text-white ">
         <div className="absolute hidden  top-0 inset-0    ">
           <svg
@@ -292,14 +292,16 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu pr-7  menu-horizontal px-1">{links}</ul>
         </div>
-        <div className=" flex   space-x-3  ">
+        <div className="   hidden lg:blcok space-x-3  ">
           <IoIosSearch className="text-3xl text-white" />
           <FaEarthAsia className="text-3xl" />
           <button className="btn btn-outline z-10  text-white ">Sign Up</button>
-      
-         <Link href={'/login'}>
-         <button   className='btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline'>Login</button> 
-         </Link>
+
+          <Link href={"/login"}>
+            <button className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline">
+              Login
+            </button>
+          </Link>
         </div>
       </div>
     </div>

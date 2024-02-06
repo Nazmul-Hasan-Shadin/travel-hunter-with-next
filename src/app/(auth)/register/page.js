@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form";
 import loginImage from "@/assets/login/log.png";
 import Image from "next/image";
-const register = () => {
+const Register = () => {
   const {
     register,
     handleSubmit,
@@ -12,7 +12,7 @@ const register = () => {
   const onSubmit = (data) => {
     console.log(data);
   };
-  console.log(errors);
+  
   return (
     <div className="flex flex-col-reverse lg:flex-row">
       <div className="lg:flex-1 bg-[#000000] pt-5">
@@ -121,4 +121,4 @@ const register = () => {
   );
 };
 
-export default register;
+export default Register;

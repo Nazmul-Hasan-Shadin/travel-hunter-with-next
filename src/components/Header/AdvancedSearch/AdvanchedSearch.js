@@ -7,7 +7,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 const AdvancedSearch = ({ onclick, className }) => {
   return (
     <div
-      className={` relative  -mt-28   lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${className} `}
+      className={` relative z-10   lg:-mt-72  lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${className} `}
     >
       <div className="grid  grid-cols-1 lg:grid-cols-3  sm:bg-for-form  relative">
         <div>
@@ -97,7 +97,8 @@ const AdvancedSearch = ({ onclick, className }) => {
                       <span className="block "> No of Luggage</span>
                       <input
                         type="text"
-       z                 placeholder="Type here"
+                        z
+                        placeholder="Type here"
                         className="input  text-black  input-bordered w-full max-w-xs"
                       />
                     </div>

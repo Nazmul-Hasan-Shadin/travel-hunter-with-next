@@ -1,10 +1,13 @@
- 'useClient'
-const HeaderText = ({ onclick,className }) => {
+"useClient";
+const HeaderText = ({ onclick, className }) => {
   return (
-    <div className={`w-full relative lg:w-[64%]   text-white space-y-3 pt-14 mt-[37% lg:pl-[184px]  bg-[#101010] lg:bg-opacity-0 lg:mt-0 h-[400px]  ${className} `}>
-      <h1 className=" text-3xl lg:text-6xl p-4 lg:p-0">
+    <div
+      className={`w-full  relative lg:absolute lg:top-9 lg:w-[64%]   text-white space-y-2 pt-14 mt-[37% lg:pl-[184px]  bg-[#101010] lg:bg-opacity-0 lg:mt-0 z-20  h-[400px]  ${className} `}
+    >
+      <h1 className=" text-3xl lg:text-5xl p-4 lg:p-0">
         {" "}
-        Start <br /> your <span className="text-[#00C9C9]"> unforgettable </span>
+        Start <br /> your{" "}
+        <span className="text-[#00C9C9]"> unforgettable </span>
         <br />
         journey with us.{" "}
       </h1>
@@ -12,11 +15,11 @@ const HeaderText = ({ onclick,className }) => {
         The best travel for your jouney begins now
       </p>
 
-      <div className="relative mx-auto   w-[90%] lg:w- ">
+      <div className="relative mx-auto  w-[90%] lg:w- ">
         <input
           type="text"
           placeholder="Email here"
-          className="input  input-bordered input-md w-full max-w-xs text-black  opacity-[0.1] bg-[#FFF]"
+          className="input   input-bordered input-md w-full max-w-xs text-black  opacity-[0.1] bg-[#FFF]"
         />
 
         <div className="  absolute  right-0 lg:right-12 top-0 lg:w-[300px] ">
