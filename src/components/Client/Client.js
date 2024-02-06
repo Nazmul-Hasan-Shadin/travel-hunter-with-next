@@ -14,13 +14,13 @@ const Client = () => {
          </div>
 
          <div className='flex justify-between px-[9%] '>
-            <Image className='px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
-            <Image  className='px-5 py-5'  src={logo2} width={100} height={100} alt='logo'></Image>
-            <Image className='px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
-            <Image className='px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
-            <Image  className='px-5 py-5'  src={logo2} width={100} height={100} alt='logo'></Image>
-            <Image className='px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
-            <Image  className='px-5 py-5'  src={logo2} width={100} height={100} alt='logo'></Image>
+            <Image className='  md:px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
+            <Image  className=' md:px-5 py-5'  src={logo2} width={100} height={100} alt='logo'></Image>
+            <Image className=' md:px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
+            <Image className=' md:px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
+            <Image  className=' md:px-5 py-5'  src={logo2} width={100} height={100} alt='logo'></Image>
+            <Image className=' md:px-5 py-5' src={logo1} width={100} height={100} alt='logo'></Image>
+            <Image  className=' md:px-5 py-5'  src={logo2} width={100} height={100} alt='logo'></Image>
          </div>
         </div>
     );

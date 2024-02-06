@@ -6,6 +6,7 @@ import image from '@/assets/review/Avatar.png'
 
 
 const Review = ({review}) => {
+  console.log(review);
   const {imaged ,description,star,name,title}= review;
   console.log(image,'image');
     return (

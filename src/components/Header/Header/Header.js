@@ -8,6 +8,8 @@ const Header = () => {
     return (
         <div className=''>
             <div className="bg-no-repeat h-[40vh] bg-cover bg-center lg:h-[97vh] w-full  " style={{backgroundImage:"url('/carBanner.png')"}}>
+      
+      
            <Navbar></Navbar>
         
            <HeaderText className="hidden lg:block"></HeaderText>

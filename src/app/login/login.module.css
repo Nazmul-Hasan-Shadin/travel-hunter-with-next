@@ -1,0 +1,13 @@
+.circleBg {
+  position: relative;
+}
+.circleBg::before {
+  content: " ";
+  width: 500px;
+  height: 500px;
+  background: #008080;
+  filter: blur(210px);
+  position: absolute;
+  left: 20px;
+  top: 10%;
+}

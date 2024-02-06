@@ -25,7 +25,7 @@ const TreapDeal = () => {
             ></PrimaryHeader>
       </div>
 
-            <div className='lg:p-[7.5%]'>
+            <div className='lg:p-[7.5%] '>
             <Swiper
         slidesPerView={4}
         spaceBetween={30}
@@ -39,7 +39,7 @@ const TreapDeal = () => {
 
         <SwiperSlide> 
     
-       <Image src={TreapDeal} width={'100%'} height={'100%'} alt='trip images'/>
+       <Image src={TreapDeal} width={200} height={'100%'} alt='trip images'/>
       
         </SwiperSlide>
         <SwiperSlide>
@@ -49,7 +49,7 @@ const TreapDeal = () => {
         </SwiperSlide>
         <SwiperSlide>
     
-     <Image src={tripslider4} width={'100%'} height={'100%'} alt='trip images'/>
+     <Image src={tripslider4} width={200} height={'100%'} alt='trip images'/>
   
         </SwiperSlide>
         <SwiperSlide>

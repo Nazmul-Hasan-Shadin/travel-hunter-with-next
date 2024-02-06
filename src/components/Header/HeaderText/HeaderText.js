@@ -19,7 +19,7 @@ const HeaderText = ({ onclick,className }) => {
           className="input  input-bordered input-md w-full max-w-xs text-black  opacity-[0.1] bg-[#FFF]"
         />
 
-        <div className=" relative lg:absolute  lg:right-12 top-0 lg:w-[300px] ">
+        <div className="  absolute  right-0 lg:right-12 top-0 lg:w-[300px] ">
           <button
             onClick={onclick}
             className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline opacity: 0.1 lg:opacity-1 "
