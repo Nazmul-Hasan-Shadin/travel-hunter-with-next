@@ -5,8 +5,8 @@ import { FaStar } from "react-icons/fa6";
 const DriverDetails = () => {
   return (
     <div className=" bg-[#000000]">
-      <div className=" md:w-9/12 mx-auto text-white bg-[#084848]">
-        <h3 className="text-3xl">
+      <div className=" md:w-9/12 mx-auto text-white ">
+        <h3 className="text-3xl py-10">
           Driver <span className="text-[#008080]">Profile</span>
         </h3>
         {/* dricve details */}
@@ -77,7 +77,7 @@ const DriverDetails = () => {
             {/* ==================details form================ */}
 
             <div className="flex flex-col  gap-4">
-              <div className="bg-[#003333]  p-3 pb-2 md:pb-0 flex  flex-col md:flex-row md:items-center">
+              <div className="bg-[#003333]  p-3 flex  flex-col md:flex-row md:items-center">
                 <label htmlFor="phone" className="text-start mr-16 w-28">
                   Driver Phone Number
                 </label>
@@ -85,10 +85,10 @@ const DriverDetails = () => {
                   type="number"
                   id="phone"
                   placeholder="+88 017-xxxxx-xxx"
-                  className="input input-bordered w-full max-w-md"
+                  className="input input-bordered w-full bg-[#7C7C7C] max-w-md"
                 />
               </div>
-              <div className="bg-[#003333]  p-3 pb-2 md:pb-0  flex flex-col md:flex-row md:items-center">
+              <div className="bg-[#003333]  p-3  flex flex-col md:flex-row md:items-center">
                 <label className="text-start mr-16 w-28" htmlFor="lincess">
                   Driver Lincess
                 </label>
@@ -96,10 +96,10 @@ const DriverDetails = () => {
                   id="lincess"
                   type="text"
                   placeholder="Lincesses"
-                  className="input  input-bordered w-full max-w-md"
+                  className="input  input-bordered bg-[#7C7C7C] w-full max-w-md"
                 />
               </div>
-              <div className="bg-[#003333]  p-3 pb-2 md:pb-0  flex  flex-col md:flex-row md:items-center">
+              <div className="bg-[#003333]  p-3  flex  flex-col md:flex-row md:items-center">
                 <label
                   className="text-start mr-16 w-28"
                   htmlFor="professionalizm"
@@ -109,10 +109,10 @@ const DriverDetails = () => {
                 <textarea
                   id="professionalizm"
                   placeholder="Bio"
-                  class="textarea textarea-bordered textarea-sm w-full max-w-md"
+                  class="textarea bg-[#7C7C7C] textarea-bordered textarea-sm w-full max-w-md"
                 ></textarea>
               </div>
-              <div className="bg-[#003333]  p-3 pb-2 md:pb-0 flex  flex-col md:flex-row  md:items-center ">
+              <div className="bg-[#003333]  p-3 flex  flex-col md:flex-row  md:items-center ">
                 <label className="text-start mr-16 w-28" htmlFor="experience">
                   Experience
                 </label>
@@ -120,25 +120,25 @@ const DriverDetails = () => {
                   id="experience"
                   type="number"
                   placeholder="5 Year"
-                  className="input input-bordered w-full max-w-md"
+                  className="input bg-[#7C7C7C] input-bordered w-full max-w-md"
                 />
               </div>
-              <div className="bg-[#003333]  p-3 pb-2 md:pb-0 flex  flex-col md:flex-row md:items-center">
+              <div className="bg-[#003333]  p-3 flex  flex-col md:flex-row md:items-center">
                 <label className="text-start mr-16 w-28" htmlFor="">
                   Professionalism
                 </label>
                 <textarea
                   placeholder="Bio"
-                  class="textarea textarea-bordered textarea-sm w-full max-w-md"
+                  class="textarea textarea-bordered bg-[#7C7C7C] textarea-sm w-full max-w-md"
                 ></textarea>
               </div>
-              <div className="bg-[#003333]  p-3 pb-2 md:pb-0  flex-col md:flex-row items-center">
+              <div className="bg-[#003333]  p-3  flex-col md:flex-row items-center">
                 <label className="text-start mr-16 w-28" htmlFor="">
                   Professionalism
                 </label>
                 <textarea
                   placeholder="Bio"
-                  class="textarea textarea-bordered textarea-sm w-full max-w-md"
+                  class="textarea bg-[#7C7C7C] textarea-bordered textarea-sm w-full max-w-md"
                 ></textarea>
               </div>
             </div>
