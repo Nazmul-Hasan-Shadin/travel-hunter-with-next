@@ -7,20 +7,19 @@ import CategoriesContent from "./CategoriesContent/CategoriesContent";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
 
 const Categories = async () => {
-  const axiosPublic= useAxiosPublic()
+  const axiosPublic = useAxiosPublic();
   const data = await axiosPublic.get("/categories-data", {
-    cache:'no-store'
+    cache: "no-store",
   });
+  console.log(data);
 
+  const selectCar = data?.data?.message?.find((car) => car.carData);
+  const car = selectCar?.carData.filter((car) => car.category === "car");
 
-  const selectCar =  data?.data?.message?.find((car) => car.carData);
-  const car= selectCar?.carData.filter(car=>car.category==='car')
-  
-  const selectHotel =  data?.data?.message?.find((hotel) => hotel.hotelData);
-  const hotel= selectHotel?.hotelData.filter(hotel=>hotel.category==='hotel')
-  
- 
-
+  const selectHotel = data?.data?.message?.find((hotel) => hotel.hotelData);
+  const hotel = selectHotel?.hotelData.filter(
+    (hotel) => hotel.category === "hotel"
+  );
 
   return (
     <div className="bg-[#101010]  partial-background-categories ">
@@ -33,7 +32,10 @@ const Categories = async () => {
       ></PrimaryHeader>
 
       {/* ==============categories============================= */}
-      <CategoriesContent categoryContent={car} hotel={hotel} ></CategoriesContent>
+      <CategoriesContent
+        categoryContent={car}
+        hotel={hotel}
+      ></CategoriesContent>
     </div>
   );
 };

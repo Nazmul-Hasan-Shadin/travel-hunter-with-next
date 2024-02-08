@@ -4,10 +4,17 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "./AdvanceSearch.css";
 
 import { MdOutlineLocationOn } from "react-icons/md";
+import { usePathname } from "next/navigation";
 const AdvancedSearch = ({ onclick, className }) => {
+  const pathname = usePathname();
+
   return (
     <div
-      className={` relative z-10   lg:-mt-72  lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${className} `}
+      className={` relative z-20  ${
+        pathname === "/car-details" ? "lg:-mt-7" : "lg:-mt-72"
+      }    lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${
+        pathname === "/car-details" && "lg:-mt-[500px]"
+      } ${className} `}
     >
       <div className="grid  grid-cols-1 lg:grid-cols-3  sm:bg-for-form  relative">
         <div>
@@ -97,7 +104,6 @@ const AdvancedSearch = ({ onclick, className }) => {
                       <span className="block "> No of Luggage</span>
                       <input
                         type="text"
-                        z
                         placeholder="Type here"
                         className="input  text-black  input-bordered w-full max-w-xs"
                       />

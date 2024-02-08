@@ -6,8 +6,15 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 import PrimaryButton from "../../shared/PrimaryButton/PrimaryButton";
-import "./Navbar.css";
+import { useState } from "react";
+import style from "./Navbar.module.css";
 const Navbar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
   const links = (
     <>
       <li>
@@ -16,9 +23,19 @@ const Navbar = () => {
       </li>
       <li>
         {" "}
-        <Link href={""}>
-          services <MdKeyboardArrowDown />{" "}
-        </Link>{" "}
+        <div onClick={toggleDropdown} className={`cursor-pointer `}>
+          Services <MdKeyboardArrowDown />
+        </div>
+        {isDropdownOpen && (
+          <ul className={`${style.dropdownMenu} absolute z-10`}>
+            <li>
+              {" "}
+              <Link href={"/car-details"}>car details</Link>{" "}
+            </li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+          </ul>
+        )}
       </li>
       <li>
         {" "}
@@ -274,8 +291,9 @@ const Navbar = () => {
               </svg>
             </div>
             <ul
+              style={{ zIndex: "40" }}
               tabIndex={0}
-              className="menu text-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu  text-black menu-sm dropdown-content mt-3 z-[30] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {links}
             </ul>

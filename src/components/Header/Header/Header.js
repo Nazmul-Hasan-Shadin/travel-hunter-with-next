@@ -11,16 +11,18 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 import Navbar from "@/components/Header/Navbar/Navbar";
 
-
 import AdvancedSearch from "../AdvancedSearch/AdvanchedSearch";
 
 import Image from "next/image";
 import HeaderText from "../HeaderText/HeaderText";
-import AirplaneBanner from '@/assets/Banner/airplaneBanner.png'
+import AirplaneBanner from "@/assets/Banner/airplaneBanner.png";
 import car from "../../../assets/Banner/carBanner.png";
 import hotel from "../../../assets/Banner/hotelBanner.png";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <div className="">
       <div className=" ">
@@ -34,50 +36,66 @@ const Header = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination,Autoplay]}
-          className="mySwiper h-[40vh] lg:h-[100vh] -mt-16 "
+          modules={[Pagination, Autoplay]}
+          className={`mySwiper h-[40vh] lg:h-[100vh] ${
+            pathname === "/car-details" && "lg:h-[28vh]"
+          } -mt-16`}
         >
-          <SwiperSlide>
-            <div>
-              <Image
-                className="bg-no-repeat h-[40vh] bg-contain bg-center lg:h-[97vh]  w-full -z-10"
-                height={600}
-                alt="jf"
-                src={car}
-              />
+          {
+            <SwiperSlide>
+              <div>
+                <Image
+                  className={`bg-no-repeat h-[40vh] bg-contain bg-center  w-full -z-10 ${
+                    pathname === "/car-details"
+                      ? "lg:h-[28vh] bg-contain  "
+                      : " lg:h-[97vh]"
+                  } `}
+                  height={600}
+                  alt="jf"
+                  src={car}
+                />
 
-              <HeaderText className="hidden lg:block"></HeaderText>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image
-                className="bg-no-repeat h-[40vh] bg-contain bg-center lg:h-[97vh]  w-full -z-10"
-                height={600}
-                alt="jf"
-                src={AirplaneBanner}
-              />
+                {pathname.startsWith("/car-details") ? (
+                  ""
+                ) : (
+                  <HeaderText className="hidden lg:block"></HeaderText>
+                )}
+              </div>
+            </SwiperSlide>
+          }
+          {pathname === "/" && (
+            <SwiperSlide>
+              <div>
+                <Image
+                  className={`bg-no-repeat h-[40vh] bg-contain bg-center lg:h-[97vh]  w-full -z-10  `}
+                  height={600}
+                  alt="jf"
+                  src={AirplaneBanner}
+                />
 
-              <HeaderText className="hidden lg:block"></HeaderText>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div>
-              <Image
-                className="bg-no-repeat h-[40vh] bg-contain bg-center lg:h-[97vh]  w-full -z-10"
-                height={600}
-                alt="jf"
-                src={hotel}
-              />
+                <HeaderText className="hidden lg:block"></HeaderText>
+              </div>
+            </SwiperSlide>
+          )}
+          {pathname === "/" && (
+            <SwiperSlide>
+              <div>
+                <Image
+                  className="bg-no-repeat h-[40vh] bg-contain bg-center lg:h-[97vh]  w-full -z-10"
+                  height={600}
+                  alt="jf"
+                  src={hotel}
+                />
 
-              <HeaderText className="hidden lg:block"></HeaderText>
-            </div>
-          </SwiperSlide>
+                <HeaderText className="hidden lg:block"></HeaderText>
+              </div>
+            </SwiperSlide>
+          )}
         </Swiper>
         <AdvancedSearch className="hidden fixed lg:block"></AdvancedSearch>
       </div>
       <HeaderText className="block lg:hidden"></HeaderText>
-      <AdvancedSearch className="block md:hidden"></AdvancedSearch>z
+      <AdvancedSearch className="block md:hidden"></AdvancedSearch>
     </div>
   );
 };
