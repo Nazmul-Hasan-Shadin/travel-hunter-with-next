@@ -11,7 +11,7 @@ const Experience = async () => {
   const reviewsData = await axiosPublic.get("/reviews");
 
   return (
-    <div className="bg-[#101010] space-y-4  ">
+    <div className="bg-[#101010] space-y-24 py-10  ">
       <PrimaryHeader
         heading={"TRAVELLERS"}
         styleText={"EXPERIENCE"}
@@ -20,7 +20,7 @@ const Experience = async () => {
         }
       ></PrimaryHeader>
 
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-3  ">
+      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16  lg:gap-3  ">
         {reviewsData?.data?.message?.slice(0, 3).map((review) => (
           <Review key={review._id} review={review}></Review>
         ))}

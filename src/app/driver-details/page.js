@@ -4,8 +4,8 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 const DriverDetails = () => {
   return (
-    <div className=" bg-[#000000]">
-      <div className=" md:w-9/12 mx-auto text-white ">
+    <div className=" bg-[#000000] md:-translate-y-60">
+      <div className=" md:w-9/12 mx-auto  text-white md:pt-60 ">
         <h3 className="text-3xl py-10">
           Driver <span className="text-[#008080]">Profile</span>
         </h3>

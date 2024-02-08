@@ -22,7 +22,7 @@ const Categories = async () => {
   );
 
   return (
-    <div className="bg-[#101010]  partial-background-categories ">
+    <div className="bg-[#101010] py-7 partial-background-categories ">
       <PrimaryHeader
         heading={"ALL"}
         styleText={"CATEGORIES"}
