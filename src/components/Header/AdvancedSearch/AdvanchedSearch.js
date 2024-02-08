@@ -11,10 +11,10 @@ const AdvancedSearch = ({ onclick, className }) => {
   return (
     <div
       className={` relative z-20  ${
-        pathname === "/car-details" ? "lg:-mt-7" : "lg:-mt-72"
-      }    lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${
-        pathname === "/car-details" && "lg:-mt-[500px]"
-      } ${className} `}
+        pathname === "/car-details" || pathname === "/driver-details"
+          ? "lg:-mt-12  "
+          : "lg:-mt-72"
+      }    lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${className} `}
     >
       <div className="grid  grid-cols-1 lg:grid-cols-3  sm:bg-for-form  relative">
         <div>

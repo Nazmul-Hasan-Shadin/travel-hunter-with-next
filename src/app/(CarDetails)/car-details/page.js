@@ -12,8 +12,8 @@ const CarDetails = async ({ cardetail }) => {
   const carData = res?.data?.message[0]?.carData;
 
   return (
-    <div className="bg-[#000000]">
-      <div className="w-9/12  -z-10  mx-auto mt-12 mb-24">
+    <div className="bg-[#000000] lg:-translate-y-64 ">
+      <div className="w-9/12  -z-10  mx-auto mt-12 mb-24 lg:pt-64">
         <h1 className="text-5xl text-white pb-[107px]">
           Our Car <span className="text-[#00C9C9]"> Feets</span>{" "}
         </h1>

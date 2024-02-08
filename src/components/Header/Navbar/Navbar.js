@@ -23,16 +23,18 @@ const Navbar = () => {
       </li>
       <li>
         {" "}
-        <div onClick={toggleDropdown} className={`cursor-pointer `}>
+        <div onMouseOver={toggleDropdown} className={`cursor-pointer `}>
           Services <MdKeyboardArrowDown />
         </div>
         {isDropdownOpen && (
           <ul className={`${style.dropdownMenu} absolute z-10`}>
             <li>
-              {" "}
-              <Link href={"/car-details"}>car details</Link>{" "}
+              <Link href={"/car-details"}>car details</Link>
             </li>
-            <li>Service 2</li>
+            <li>
+              {" "}
+              <Link href={"/driver-details"}>Driver details</Link>{" "}
+            </li>
             <li>Service 3</li>
           </ul>
         )}
