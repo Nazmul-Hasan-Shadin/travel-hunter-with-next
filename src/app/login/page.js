@@ -4,6 +4,7 @@ import Image from "next/image";
 import loginImage from "@/assets/login/log.png";
 import circleStyle from "./login.module.css";
 import { signIn } from "next-auth/react";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const {
@@ -22,6 +23,10 @@ const Login = () => {
     } catch (error) {
       console.log(error);
     }
+  };
+
+  const handleGoogleSignIn = async () => {
+    await signIn("google");
   };
   return (
     <div className="flex flex-col-reverse lg:flex-row ">
@@ -78,6 +83,15 @@ const Login = () => {
               <button className="btn bg-[#008080] focus:ring text-white hover:bg-[#008080]">
                 Login
               </button>
+            </div>
+            <div className="form-control mt-6">
+              <button onClick={handleGoogleSignIn} className="px-4 btn ">
+                <span className="text-4xl ">
+                  {" "}
+                  <FcGoogle />{" "}
+                </span>
+              </button>
+              <div className="divider"></div>
             </div>
           </form>
         </div>
