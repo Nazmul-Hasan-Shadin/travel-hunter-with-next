@@ -2,17 +2,20 @@
 import { useForm } from "react-hook-form";
 import loginImage from "@/assets/login/log.png";
 import Image from "next/image";
+import useAxiosPublic from "@/hooks/useAxiosPublic";
 const Register = () => {
+  const axiosPublic = useAxiosPublic();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = async (data) => {
+    const postUserInfo = await axiosPublic.post("/signup", data);
   };
-  
+
   return (
     <div className="flex flex-col-reverse lg:flex-row">
       <div className="lg:flex-1 bg-[#000000] pt-5">
@@ -57,9 +60,9 @@ const Register = () => {
                     required: "Email field is required",
                   })}
                 />
-               <span className="text-red-400">
-               {errors?.email?.message && `${errors.email.message}`}
-               </span>
+                <span className="text-red-400">
+                  {errors?.email?.message && `${errors.email.message}`}
+                </span>
               </div>
               <div className="form-control">
                 <label className="label">
@@ -74,8 +77,7 @@ const Register = () => {
                   className="input input-bordered border-b-4 border-b-[#008080]"
                 />
                 <span className="text-red-500">
-                {errors?.password?.message && `${errors.password.message}`}
-
+                  {errors?.password?.message && `${errors.password.message}`}
                 </span>
               </div>
 
@@ -86,17 +88,16 @@ const Register = () => {
                   </span>
                 </label>
                 <input
-                 {...register("password", {
-                  required: "Password field is required",
-                })}
+                  // {...register("password", {
+                  //   required: "Password field is required",
+                  // })}
                   type="password"
                   placeholder="password"
                   className="input input-bordered border-b-4 border-b-[#008080]"
                   required
                 />
                 <span className="text-red-400">
-                {errors?.password?.message && `${errors.password.message}`}
-                
+                  {errors?.password?.message && `${errors.password.message}`}
                 </span>
               </div>
 

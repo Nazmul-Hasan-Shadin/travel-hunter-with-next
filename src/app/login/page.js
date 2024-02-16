@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import Image from "next/image";
 import loginImage from "@/assets/login/log.png";
 import circleStyle from "./login.module.css";
+import { signIn } from "next-auth/react";
 
 const Login = () => {
   const {
@@ -11,8 +12,16 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const submitForm = (data) => {
-    console.log(data);
+  const submitForm = async (data) => {
+    try {
+      const result = await signIn("credentials", {
+        email: data.email,
+        password: data.password,
+        redirect: false,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <div className="flex flex-col-reverse lg:flex-row ">

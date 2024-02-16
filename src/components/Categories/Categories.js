@@ -1,19 +1,19 @@
-import axios from "axios";
-
 import "./Categories.css";
 import PrimaryHeader from "../shared/PrimaryHeader/PrimaryHeader";
-import CategoryTab from "../CategoryTab/CategoryTab";
+// import CategoryTab from "../CategoryTab/CategoryTab";
 import CategoriesContent from "./CategoriesContent/CategoriesContent";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
+// import useAxiosPublic from "@/hooks/useAxiosPublic";
 
 const Categories = async () => {
   const axiosPublic = useAxiosPublic();
-  const data = await axiosPublic.get("/categories-data", {
+  const data = await axiosPublic.get(`/categories-data`, {
     cache: "no-store",
   });
   console.log(data);
 
   const selectCar = data?.data?.message?.find((car) => car.carData);
+  console.log(selectCar);
   const car = selectCar?.carData.filter((car) => car.category === "car");
 
   const selectHotel = data?.data?.message?.find((hotel) => hotel.hotelData);
@@ -21,6 +21,11 @@ const Categories = async () => {
     (hotel) => hotel.category === "hotel"
   );
 
+  // ===============for next js monos server===============
+  // const car = data?.data[0]?.carData;
+
+  // const hotel = data?.data[0]?.hotelData;
+  // console.log(hotel);
   return (
     <div className="bg-[#101010] py-7 partial-background-categories ">
       <PrimaryHeader

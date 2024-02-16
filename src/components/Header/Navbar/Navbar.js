@@ -2,6 +2,7 @@
 import { IoIosSearch } from "react-icons/io";
 import { FaEarthAsia } from "react-icons/fa6";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { signIn, useSession } from "next-auth/react";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +10,8 @@ import PrimaryButton from "../../shared/PrimaryButton/PrimaryButton";
 import { useState } from "react";
 import style from "./Navbar.module.css";
 const Navbar = () => {
+  const { data: session } = useSession();
+  console.log(session);
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -312,16 +315,30 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu pr-7  menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="   hidden lg:blcok space-x-3  ">
+        <div className="    lg:blcok space-x-3  ">
           <IoIosSearch className="text-3xl text-white" />
           <FaEarthAsia className="text-3xl" />
-          <button className="btn btn-outline z-10  text-white ">Sign Up</button>
-
-          <Link href={"/login"}>
-            <button className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline">
-              Login
+          <Link href="/register">
+            <button className="btn btn-outline z-10  text-white ">
+              Sign Up
             </button>
           </Link>
+
+          {session ? (
+            <button
+              onClick={() => signIn()}
+              className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline"
+            >
+              Log out
+            </button>
+          ) : (
+            <button
+              onClick={() => signIn()}
+              className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline"
+            >
+              Login
+            </button>
+          )}
         </div>
       </div>
     </div>
