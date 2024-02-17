@@ -4,6 +4,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import driverImg from "@/assets/driverinfo/driver.png";
 import car from "@/assets/trip/car1.png";
 import Image from "next/image";
+import BookingCarCard from "@/components/shared/BookingCarCard/BookingCarCad";
 const BookingDetails = () => {
   return (
     <div className="">
@@ -14,60 +15,8 @@ const BookingDetails = () => {
       </div>
 
       <div className="flex flex-col  lg:flex-row justify-around  md:pl-44  ">
-        <div className="card  px-3 bg-base-100 shadow-xl">
-          <figure className="relative">
-            <Image
-              className="w-full"
-              src={car}
-              width={300}
-              height={300}
-              alt="driver image "
-            ></Image>
+        <BookingCarCard />
 
-            <Image
-              className="absolute top-0 left-2"
-              src={driverImg}
-              width={100}
-              height={90}
-              alt="driver image "
-            />
-          </figure>
-          <div className="bg-[#008080] ">
-            <h2 className="text-white text-xl lg:text-2xl py-4 px-7 whitespace-nowrap">
-              LINCOLN CLASSSIC SEDAN
-            </h2>
-          </div>
-          <div className="card-body p-3">
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {` 10 passenger `}
-            </span>
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {` Sealth + leather Interior `}
-            </span>
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {` Drink Include `}
-            </span>
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {` Air Condition  `}
-            </span>
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {` wifi connection `}
-            </span>
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {` Blutooth audio system `}
-            </span>
-            <span className="flex items-center gap-1">
-              <IoMdCheckmarkCircleOutline className="text-blue-400" />{" "}
-              {`Mobile phone charger`}
-            </span>
-          </div>
-        </div>
         {/* =============booking    form================== */}
         <div className="grid  grid-cols-1 lg:grid-cols-2   md:gap-x-5 px-3 ">
           <div>
@@ -214,6 +163,20 @@ const BookingDetails = () => {
               placeholder="Additional Note"
               className="textarea textarea-bordered textarea-lg w-full max-w-full bg-[#003333]"
             ></textarea>
+            <div className="label">
+              <span className="label-text-alt">
+                {" "}
+                <button className="btn bg-[#008080]  text-white">
+                  Previous
+                </button>{" "}
+              </span>
+              <span className="label-text-alt">
+                {" "}
+                <button className="btn bg-[#008080]  text-white">
+                  Next
+                </button>{" "}
+              </span>
+            </div>
           </div>
         </div>
       </div>

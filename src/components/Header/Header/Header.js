@@ -40,7 +40,8 @@ const Header = () => {
           className={`mySwiper h-[40vh] lg:h-[100vh] ${
             pathname === "/car-details" ||
             pathname === "/booking-details" ||
-            pathname === "/driver-details"
+            pathname === "/driver-details" ||
+            pathname === "/booking-checkout"
               ? "lg:h-[28vh]"
               : ""
           } -mt-16`}
@@ -52,7 +53,8 @@ const Header = () => {
                   className={`bg-no-repeat h-[40vh] bg-contain bg-center  w-full -z-10 ${
                     pathname === "/car-details" ||
                     pathname === "/booking-details" ||
-                    pathname === "/driver-details"
+                    pathname === "/driver-details" ||
+                    pathname === "/booking-checkout"
                       ? "lg:h-[28vh] bg-contain  "
                       : " lg:h-[97vh]"
                   } `}
@@ -63,7 +65,8 @@ const Header = () => {
 
                 {pathname.startsWith("/car-details") ||
                 pathname.startsWith("/booking-details") ||
-                pathname.startsWith("/driver-details") ? (
+                pathname.startsWith("/driver-details") ||
+                pathname === "/booking-checkout" ? (
                   ""
                 ) : (
                   <HeaderText className="hidden lg:block"></HeaderText>

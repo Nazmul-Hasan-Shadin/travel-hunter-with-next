@@ -13,7 +13,8 @@ const AdvancedSearch = ({ onclick, className }) => {
       className={` relative z-20  ${
         pathname === "/car-details" ||
         pathname === "/driver-details" ||
-        pathname === "/booking-details"
+        pathname === "/booking-details" ||
+        pathname === "/booking-checkout"
           ? "lg:-mt-12  "
           : "lg:-mt-72"
       }    lg:mx-auto text-white  lg:p-6 background-search  lg:max-w-[860px]  lg:h-[278px] ${className} `}
