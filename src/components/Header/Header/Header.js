@@ -39,7 +39,10 @@ const Header = () => {
           modules={[Pagination, Autoplay]}
           className={`mySwiper h-[40vh] lg:h-[100vh] ${
             pathname === "/car-details" ||
-            (pathname === "/driver-details" ? "lg:h-[28vh]" : "")
+            pathname === "/booking-details" ||
+            pathname === "/driver-details"
+              ? "lg:h-[28vh]"
+              : ""
           } -mt-16`}
         >
           {
@@ -48,6 +51,7 @@ const Header = () => {
                 <Image
                   className={`bg-no-repeat h-[40vh] bg-contain bg-center  w-full -z-10 ${
                     pathname === "/car-details" ||
+                    pathname === "/booking-details" ||
                     pathname === "/driver-details"
                       ? "lg:h-[28vh] bg-contain  "
                       : " lg:h-[97vh]"
@@ -58,6 +62,7 @@ const Header = () => {
                 />
 
                 {pathname.startsWith("/car-details") ||
+                pathname.startsWith("/booking-details") ||
                 pathname.startsWith("/driver-details") ? (
                   ""
                 ) : (

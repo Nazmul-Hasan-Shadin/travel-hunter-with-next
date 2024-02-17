@@ -324,7 +324,7 @@ const Navbar = () => {
             </button>
           </Link>
 
-          {session ? (
+          {/* {session ? (
             <button
               onClick={() => signIn()}
               className="btn w-[111px] bg-[#008080] hover:bg-green-600 btn-md z-10 rounded-[50px]  text-white btn-outline"
@@ -338,7 +338,7 @@ const Navbar = () => {
             >
               Login
             </button>
-          )}
+          )} */}
         </div>
       </div>
     </div>
